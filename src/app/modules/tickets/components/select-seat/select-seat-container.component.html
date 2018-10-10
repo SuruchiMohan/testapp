@@ -1,0 +1,23 @@
+<div class="seatplan_bg">
+    <div class="col-md-1"></div>
+    <div class="seatplan2 col-md-6">
+        <div>
+            <app-selected-movie-details [activeMovie]="activeMovie$ | async"></app-selected-movie-details>
+           
+        </div>
+        
+        <app-seat-chart [seatingPlan]="seatingPlan$ | async" (seatSelected)="onSeatSelected($event)"></app-seat-chart>
+    </div>
+    <div class="col-md-1"></div>
+
+    <div class="selectedseats2 col-md-4">
+        <app-selected-seats [selectedSeats]="selectedSeats$ | async"></app-selected-seats>
+          <div>
+            <!--if no seats selected, disable the checkout button-->
+            <button type="button" class="btn btn-success" 
+              [disabled]="(selectedSeats$ | async)?.length == 0" 
+              (click)="purchaseTickets()">
+              Checkout</button>
+        </div>
+    </div>
+</div>

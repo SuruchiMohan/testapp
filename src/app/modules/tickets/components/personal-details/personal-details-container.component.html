@@ -1,0 +1,14 @@
+<div class="seatplan_bg">
+  <div class="col-md-1"></div>
+  <div class="checkout col-md-6 " style="padding-top:20px">
+    <div class="col-md-8">
+      <app-selected-movie-details [activeMovie]="activeMovie$ | async"></app-selected-movie-details>
+      <app-checkout-form (completedPurchase)="onCompletePurchase($event)"></app-checkout-form>
+    </div>
+  </div>
+  <div class="col-md-1"></div>
+  <div class="checkout2 col-md-4 ">
+    <app-selected-seats [selectedSeats]="selectedSeats$ | async "></app-selected-seats>
+  </div>
+
+</div>

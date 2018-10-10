@@ -1,0 +1,44 @@
+<div class="container">
+
+    <p class="text-right">menu</p>
+</div>
+
+<div class="slide-wrapper">
+
+    <div id="homepage-feature" class="carousel slide">
+
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+            <div class="item active" style="background-image:url(assets/images/bk.jpg)">
+                <div class="carousel-caption">
+                    <h1>Welcome to the movies !</h1>
+                    <p>Please select your desired movie and show time, and click 'purchase tickets'</p>
+        
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="red">
+
+        <div class="red-content">
+            <div class="quickBuyMenu">
+         
+                <!--<div class="selects top ">-->
+                    <app-movie-selector [movies]="movies$ | async" (selectedMovieId)="onSelectedMovieId($event)"></app-movie-selector>
+                    <app-movie-date-selector [movieTimes]="movieTimes$ | async" (selectedActiveMovieId)="onSelectedActiveMovieId($event)"></app-movie-date-selector>
+                    <div class="send_btn" (click)="purchaseTickets()"></div>
+
+                <!--</div>-->
+            </div>
+
+
+
+
+        </div>
+
+
+    </div>
+
+</div>

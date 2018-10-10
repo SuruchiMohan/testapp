@@ -1,0 +1,72 @@
+[  
+   {  
+      "activeMovieId":0,
+      "date":"Select",
+      "time":"Time",
+      "venue": {
+          "venueId": 0,
+          "venueName": ""
+      },
+      "movie":{  
+         "movieId":0,
+         "movieName":"Select a Movie",
+         "movieDescription":""
+      }
+   },
+   {  
+      "activeMovieId":1,
+      "date":"14/10/2017",
+      "time":"14:00",
+      "venue": {
+          "venueId": 1,
+          "venueName": "Hall 1"
+      },
+      "movie":{  
+         "movieId":1,
+         "movieName":"Top Secret",
+         "movieDescription":"Funniest Movie Ever Filmed"
+      }
+   },
+   {  
+      "activeMovieId":2,
+      "date":"14/10/2017",
+      "time":"16:00",
+      "venue": {
+          "venueId": 1,
+          "venueName": "Hall 1"
+      },
+      "movie":{  
+         "movieId":1,
+         "movieName":"Top Secret",
+         "movieDescription":"Funniest Movie Ever Filmed"
+      }
+   },
+   {  
+      "activeMovieId":3,
+      "date":"14/10/2017",
+      "time":"11:00",
+      "venue": {
+          "venueId": 2,
+          "venueName": "Hall 2"
+      },
+      "movie":{  
+         "movieId":2,
+         "movieName":"Aliens",
+         "movieDescription":"Scary Movie"
+      }
+   },
+   {  
+      "activeMovieId":4,
+      "date":"14/10/2017",
+      "time":"16:00",
+      "venue": {
+          "venueId": 3,
+          "venueName": "Hall 3"
+      },
+      "movie":{  
+         "movieId":2,
+         "movieName":"Aliens",
+         "movieDescription":"Scary Movie"
+      }
+   }
+]
